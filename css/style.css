@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-.clearfix::after{ 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after { 
 	content: ""; 
 	display: table; 
 	clear:both 
@@ -12,13 +16,11 @@
 
 .container {
   width: 80%;
-  margin:30px auto 0;
-  background-color: orange;
+  margin:30px auto 30px;
 }
 
 .row {
   width: 100%;
-  background-color: red;
   margin:30px auto 0;  
 }
 
@@ -31,11 +33,11 @@
   width: 30%;
 }
 
-.card.left{
+.card.left {
   margin-left: 2.5%;
 }
 
-.card.middle{
+.card.middle {
   width: 30%;
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -46,11 +48,11 @@
   width: 100%;
 }
 
-img.first-image{
+img.first-image {
   z-index: 10;
 }
 
-img.second-image{
+img.second-image {
   position: absolute;
   visibility: hidden;
   left:0;
@@ -58,12 +60,12 @@ img.second-image{
   z-index: 20;
 }
 
-.card:hover img.second-image{
+.card:hover img.second-image {
   cursor: pointer;
   visibility: visible;
 }
 
-.love{
+.love {
   background-color: white;
   width: 50px;
   height: 50px;
@@ -74,47 +76,81 @@ img.second-image{
   text-align: center;
 }
 
-.love::after{
+.love::after {
   content: '\2665';
   font-size: 30px;
   color: black;
   line-height: 50px;
 }
 
-.top{
+.top {
   position: relative;
 }
 
-.sale{
+.sale {
   background-color: #eb0037;
-  width: 40px;
+  width: 45px;
   height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   position: absolute;
   bottom: 20px;
   left: 0;
   z-index: 31;
   text-align: center;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.sale span, .tag span{
+.sale span, .tag span {
   line-height: 30px;
   color: white;
 }
 
-.tag{
+.tag {
   background-color: #00875a;
   height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   position: absolute;
   bottom: 20px;
   left: 0;
   z-index: 31;
   text-align: center;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.sale + .tag{
-  left: 45px;
+.sale + .tag {
+  left: 50px;
 }
 
+.description .brand {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.description .outfit {
+  font-weight: 700;
+}
+
+.price {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-weight: 550;
+}
+
+.price::after {
+  content: '\20AC';
+  padding-left: 5px;
+}
+
+.price.old {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 300;
+  text-decoration: line-through;
+}
 
 
 
