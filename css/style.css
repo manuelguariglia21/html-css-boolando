@@ -81,5 +81,41 @@ img.second-image{
   line-height: 50px;
 }
 
+.top{
+  position: relative;
+}
+
+.sale{
+  background-color: #eb0037;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 31;
+  text-align: center;
+}
+
+.sale span, .tag span{
+  line-height: 30px;
+  color: white;
+}
+
+.tag{
+  background-color: #00875a;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 31;
+  text-align: center;
+}
+
+.sale + .tag{
+  left: 45px;
+}
+
+
+
 
 
