@@ -24,6 +24,8 @@ body {
   margin:30px auto 0;  
 }
 
+/* CARD */
+
 .card {
   float: left;
   position: relative;
@@ -64,6 +66,8 @@ img.second-image {
   cursor: pointer;
   visibility: visible;
 }
+
+/* EXTRA */
 
 .love {
   background-color: white;
@@ -125,6 +129,8 @@ img.second-image {
   left: 50px;
 }
 
+/* DESCRIPTION */
+
 .description .brand {
   font-size: 15px;
   font-weight: 400;
@@ -133,6 +139,8 @@ img.second-image {
 .description .outfit {
   font-weight: 700;
 }
+
+/* PRICE */
 
 .price {
   font-family: Arial, Helvetica, sans-serif;
