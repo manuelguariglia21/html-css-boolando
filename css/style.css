@@ -59,6 +59,7 @@ img.second-image{
 }
 
 .card:hover img.second-image{
+  cursor: pointer;
   visibility: visible;
 }
 
@@ -67,7 +68,7 @@ img.second-image{
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   z-index: 30;
   text-align: center;
