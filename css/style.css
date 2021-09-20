@@ -1,5 +1,47 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.clearfix::after{ 
+	content: ""; 
+	display: table; 
+	clear:both 
+	}
+
+.container {
+  width: 80%;
+  margin:30px auto 0;
+  background-color: orange;
+}
+
+.row {
+  width: 100%;
+  background-color: red;
+  margin:30px auto 0;  
+}
+
+.card {
+  float: left;
+}
+
+.card.left, .card.right{
+  width: 30%;
+}
+
+.card.left{
+  margin-left: 2.5%;
+}
+
+.card.middle{
+  width: 30%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+
+.card .first-image{
+  width: 100%;
+
 }
