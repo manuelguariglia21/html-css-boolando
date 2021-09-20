@@ -24,6 +24,7 @@
 
 .card {
   float: left;
+  position: relative;
 }
 
 .card.left, .card.right{
@@ -41,7 +42,20 @@
 }
 
 
-.card .first-image{
+.card .first-image, .card .second-image {
   width: 100%;
-
 }
+
+img.second-image{
+  position: absolute;
+  visibility: hidden;
+  left:0;
+  top: 0;
+}
+
+.card:hover img.second-image{
+  visibility: visible;
+}
+
+
+
