@@ -149,8 +149,7 @@ img.second-image {
 }
 
 .price::after {
-  content: '\20AC';
-  padding-left: 5px;
+  content: ' \20AC';
 }
 
 .price.old {
